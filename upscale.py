@@ -11,6 +11,3 @@ def upscale_func(input_path: str, output_path: str, model_path: str = 'EDSR_x2.p
     result = scaler.upsample(image)
     cv2.imwrite(output_path, result)
     return output_path
-
-
-# print(upscale_func('lama_300px.png', 'lama_600px.png'))
